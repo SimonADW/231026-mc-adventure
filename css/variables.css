@@ -1,0 +1,18 @@
+:root {
+
+
+	--font-size-base: 24px;        /*24px*/
+	--font-size-xsmall: 0.66rem;  /*16px*/
+	--font-size-small: 9.1rem;	  /*22px*/		
+	--font-size-large: 1.3rem;     /*32*/
+	--font-size-xlarge: 2.5rem;     /*60px*/
+
+	--font-leading-base: 1rem;	
+	--font-leading-small: 1.5rem;
+	--font-leading-medium: 1.7rem;
+	--font-leading-large: 1.9rem;
+
+	--spacing-small: var(--font-leading-base);
+	--spacing-medium: 2rem;
+	--spacing-large: 4rem;
+}
