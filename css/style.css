@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;	
 	font-size: var(--font-size-base);
+	color: var(--foreground);
 }
 
 /* Header */
@@ -9,7 +10,7 @@ body {
 
 /* Main sections */
 section {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .hero {
@@ -22,12 +23,32 @@ section {
 	background-size: cover;
 }
 
+.hero__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+	font-size: var(--font-size-large);
+	font-weight: 500;
+}
+
 .section2 {
 	width: 100vw;
 	height: 70vh;
 	background-image: url(/assets/images/ducati-pov.jpeg);
 	background-position: center;
 	background-size: cover;
+	padding-top: 265px;
+}
+
+.section2 p {
+	width: 65%;
+	height: fit-content;
+	margin: 30px auto;
+	font-size: var(--font-size-small);
+	font-weight: 500;
+	text-align: center;
+	color: var(--background);
 }
 
 .section3 {
@@ -37,6 +58,22 @@ section {
 	background-position: left;
 	background-size: cover;
 	background-position-x: -150px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.section3>div {
+	width: 90%;
+	height: 35%;
+	background: #00000058;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--font-size-medium);
+	font-weight: 500;
+	color: var(--background);
+	padding: 3rem;
 }
 
 .section4 {
@@ -45,6 +82,19 @@ section {
 	background-image: url(/assets/images/bergen-ehsan-haque.jpeg);
 	background-position: center;
 	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+}
+
+.section4__caption-container {
+	width: 100%;
+	height: 30%;
+	background: var(--color-primary);
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	padding: 10%;
+	font-size: var(--font-size-small);
 }
 
 .section5 {
@@ -53,24 +103,48 @@ section {
 }
 
 .section5__top-container {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-image: url(/assets/images/eberhard-grossgasteiger.jpeg);
 	background-position: center;
-	background-size: cover;
-	
+	background-size: cover;	
 }
+
+.section5__top-container p {
+	width: 60%;
+	color: var(--foreground);
+	font-size: var(--font-size-large);
+	font-weight: 500;
+	padding-top: 5%;	
+	margin-left: 35%;
+}
+
 .section5__bottom-container {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-image: url(/assets/images/forrest-luke-miller.jpeg);
 	background-position: center;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-top: 40vh;
+	padding-left: var(--spacing-small);
+	
 }
+
+.section5__bottom-container p {
+	font-size: var(--font-size-xlarge);
+	font-weight: 500;
+	color: var(--background);
+
+}
+
 
 .section-bikes {
 	width: 100vw;
-	height: 200vh;
+	height: 200vh;	
+	/* see separate css file */
 }
 
 .section-contact {
@@ -85,21 +159,82 @@ section {
 
 .section-contact__form-container {
 	width: 100%;
-	height: 30%;
+	height: 35%;
 	background: var(--color-primary);
+	padding-top: var(--spacing-small);
+	font-weight: 500;	
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+	gap: var(--spacing-small);
+
+}
+
+.section-contact__form-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--spacing-small);
+}
+
+input {
+	width: 380px;
+	height: 45px;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+}
+
+.section-contact__button {
+	width: 150px;
+	border-radius: 10px;
+	border: none;
+	background: var(--color-normal);
+	color: var(--background);
+}
+
+
+
+.info__logo {
+	width: 50%;
+	height: auto;
+	margin-bottom: var(--spacing-large);
+	display: flex;
+	justify-content: center;
 }
 
 .section-info {
 	width: 100vw;
-	height: 100vh;
+	height: 120vh;
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .section-info__info-container {
 	width: 100%;
-	height: 70%;
+	height: 75%;
 	background: var(--color-primary);
+	/* padding-left: var(--spacing-large); */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+
+.section-info__info {
+	width: 250px;
+}
+
+.section-info__info::first-line {
+	font-weight: 600;
 }
 
 footer {

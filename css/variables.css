@@ -1,8 +1,8 @@
 :root {
 	--font-size-base: 24px;        /*24px*/
 	--font-size-xsmall: 0.66rem;  /*16px*/
-	--font-size-small: 9.1rem;	  /*22px*/		
-	--font-size-large: 1.3rem;     /*32*/
+	--font-size-small: 1rem;	  /*22px*/		
+	--font-size-large: 2rem;     
 	--font-size-xlarge: 2.5rem;     /*60px*/
 
 	--font-leading-base: 1rem;	
@@ -17,4 +17,8 @@
 	--foreground: black;
 	--background: white;
 	--color-primary: #D9D9D9;
+	--color-normal: #995E26;
+	--color-hover: #BE8A59;
+	--color-active: #E99545;
+
 }
