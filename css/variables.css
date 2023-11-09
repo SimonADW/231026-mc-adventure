@@ -13,4 +13,8 @@
 	--spacing-small: var(--font-leading-base);
 	--spacing-medium: 2rem;
 	--spacing-large: 4rem;
+
+	--foreground: black;
+	--background: white;
+	--color-primary: #D9D9D9;
 }
