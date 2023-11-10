@@ -114,6 +114,11 @@ section {
 	font-size: var(--font-size-small);
 }
 
+.section4__caption-container p::first-line {
+	font-weight: 500;
+}
+
+
 /* Section 5 - Woods*2 */
 .section5 {
 	width: 100vw;
@@ -159,16 +164,28 @@ section {
 }
 
 
-/* Section 6 - Slideshow in separate stylesheet */
+/* Section 6 Bikes - Slideshow in separate stylesheet */
 
-.section-bikes {
+.section-bikes {		/* @TODO set up grid for Desktop  */
 	width: 100vw;
 	height: 200vh;	
-	/* see separate css file */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column ;
+	gap: var(--spacing-small);
+	width: 12.5rem;
+	font-size: var(--font-size-small);
+}
+
+.section-bikes svg {
+	margin: var(--spacing-small) auto;
+}
+
+.section-bikes p::first-line {
+	font-weight: 500;
 }
 
 /* Section Contact */
-
 .section-contact {
 	width: 100vw;
 	height: 100vh;
@@ -219,9 +236,6 @@ input {
 	background: var(--color-normal);
 	color: var(--background);
 }
-
-/* About sub-section, Desktop only*/
-
 
 /* Section Information */
 
