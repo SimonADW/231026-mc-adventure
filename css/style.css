@@ -168,13 +168,23 @@ section {
 
 .section-bikes {		/* @TODO set up grid for Desktop  */
 	width: 100vw;
-	height: 200vh;	
-	margin: 0 auto;
+	height: fit-content;	
 	display: flex;
-	flex-direction: column ;
-	gap: var(--spacing-small);
-	width: 12.5rem;
+	flex-direction: column;
+	gap: var(--spacing-small);	
 	font-size: var(--font-size-small);
+	padding: var(--spacing-large) 0;
+}
+
+.section-bikes__cards__left, .section-bikes__cards__right {
+	width: 12.5rem;
+	margin: 0 auto;
+}
+
+.section-bikes>p {
+	font-size: var(--font-size-xlarge);
+	font-weight: 500;
+	margin: 0 auto;
 }
 
 .section-bikes svg {

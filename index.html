@@ -80,11 +80,65 @@
 		<section class="section-bikes">
 			<p>..bike</p>
 			<div class="section-bikes__slideshow">
-				Insert slideshow here
+				<div class="slideshow__slides">
+					<figure class="slideshow__slide slideshow__slide--visible">
+						<img class="slideshow__img" src="./assets/images/ducati-simon.jpeg" alt="">
+						<figcaption class="slideshow__caption">
+							2016 Ducati Monster 1200r
+							<br>1200cc 160hp
+						</figcaption>
+					</figure>
+					
+					<figure class="slideshow__slide">
+						<img class="slideshow__img" src="./assets/images/triumph-simon.jpeg" alt="">
+						<figcaption class="slideshow__caption">
+							Triumph Speed Triple R
+							<br>1050cc 135hp
+						</figcaption>
+					</figure>
+		
+					<figure class="slideshow__slide">
+						<img class="slideshow__img" src="./assets/images/HD_Fat_Bob-Simon.jpeg" alt="Rare please!">
+						<figcaption class="slideshow__caption">
+							Harley Davidson Fat Bob
+							<br>1600cc
+						</figcaption>
+					</figure>
+		
+					<figure class="slideshow__slide">
+						<img class="slideshow__img" src="./assets/images/BMW-R-nineT-Scrambler.jpeg" alt="Wine me, dine me">
+						<figcaption class="slideshow__caption">
+							BMW-R-nineT-Scrambler by FCR
+							<br>1170cc 110HP
+						</figcaption>
+					</figure>
+		
+				</div>
+		
+				<div class="slideshow__controls">
+					<button class="slideshow__control-button" data-direction="previous">
+						<svg xmlns="http://www.w3.org/2000/svg" width="57" height="49" viewBox="0 0 57 49" fill="none">
+							<path d="M38.1437 5.408C38.8115 5.97058 39.1867 6.73351 39.1867 7.529C39.1867 8.32449 38.8115 9.08742 38.1437 9.65L20.5093 24.5L38.1437 39.35C38.7926 39.9158 39.1517 40.6736 39.1436 41.4602C39.1355 42.2468 38.7608 42.9992 38.1003 43.5555C37.4398 44.1117 36.5462 44.4272 35.6122 44.434C34.6781 44.4409 33.7782 44.1385 33.1063 43.592L12.9532 26.621C12.2854 26.0584 11.9102 25.2955 11.9102 24.5C11.9102 23.7045 12.2854 22.9416 12.9532 22.379L33.1063 5.408C33.7744 4.84559 34.6803 4.52964 35.625 4.52964C36.5696 4.52964 37.4756 4.84559 38.1437 5.408Z" fill="#000000"/>
+						</svg>
+					</button>
+					<button class="slideshow__control-button" data-direction="next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="57" height="49" viewBox="0 0 57 49" fill="none">
+							<path d="M18.8563 43.592C18.1885 43.0294 17.8133 42.2665 17.8133 41.471C17.8133 40.6755 18.1885 39.9126 18.8563 39.35L36.4907 24.5L18.8563 9.65C18.2074 9.08419 17.8483 8.32638 17.8564 7.53979C17.8645 6.7532 18.2392 6.00076 18.8997 5.44454C19.5602 4.88831 20.4538 4.57281 21.3878 4.56598C22.3219 4.55914 23.2218 4.86152 23.8937 5.408L44.0468 22.379C44.7146 22.9416 45.0898 23.7045 45.0898 24.5C45.0898 25.2955 44.7146 26.0584 44.0468 26.621L23.8937 43.592C23.2256 44.1544 22.3197 44.4704 21.375 44.4704C20.4304 44.4704 19.5244 44.1544 18.8563 43.592Z" fill="#000000"/>
+						</svg>
+					</button>
+				</div>
+				
+				<div class="slideshow__dots">
+					<!-- Buttons added by js -->
+				</div>
+		
+				<div class="slideshow__counter">
+					1 of all
+				</div>
 			</div>
 
 			<div class="section-bikes__cards__left">
-				<div class="section-bikes__cards__card">
+				<div class="section-bikes__card">
 					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 						<g clip-path="url(#clip0_158_467)">
 						<path d="M13 13.25C14.6908 13.25 16.3123 12.5784 17.5078 11.3828C18.7034 10.1873 19.375 8.56575 19.375 6.875C19.375 5.18425 18.7034 3.56274 17.5078 2.36719C16.3123 1.17165 14.6908 0.5 13 0.5C11.3092 0.5 9.68774 1.17165 8.49219 2.36719C7.29665 3.56274 6.625 5.18425 6.625 6.875C6.625 8.56575 7.29665 10.1873 8.49219 11.3828C9.68774 12.5784 11.3092 13.25 13 13.25ZM17.25 6.875C17.25 8.00217 16.8022 9.08317 16.0052 9.8802C15.2082 10.6772 14.1272 11.125 13 11.125C11.8728 11.125 10.7918 10.6772 9.9948 9.8802C9.19777 9.08317 8.75 8.00217 8.75 6.875C8.75 5.74783 9.19777 4.66683 9.9948 3.8698C10.7918 3.07277 11.8728 2.625 13 2.625C14.1272 2.625 15.2082 3.07277 16.0052 3.8698C16.8022 4.66683 17.25 5.74783 17.25 6.875ZM25.75 23.875C25.75 26 23.625 26 23.625 26H2.375C2.375 26 0.25 26 0.25 23.875C0.25 21.75 2.375 15.375 13 15.375C23.625 15.375 25.75 21.75 25.75 23.875ZM23.625 23.8665C23.6229 23.3438 23.2978 21.7712 21.857 20.3305C20.4715 18.945 17.8641 17.5 13 17.5C8.13375 17.5 5.5285 18.945 4.143 20.3305C2.70225 21.7712 2.37925 23.3438 2.375 23.8665H23.625Z" fill="black"/>
@@ -101,7 +155,7 @@
 						Riders and Owners can rest assured all Twisted Road users are safe and experienced motorcycle riders.
 					</p>
 				</div>
-				<div class="section-bikes__cards__card">
+				<div class="section-bikes__card">
 					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28" fill="none">
 						<g clip-path="url(#clip0_158_470)">
 						<path d="M1.08325 15.6668C1.08325 14.9154 1.38176 14.1947 1.91312 13.6634C2.44447 13.132 3.16514 12.8335 3.91659 12.8335H18.0833C18.8347 12.8335 19.5554 13.132 20.0867 13.6634C20.6181 14.1947 20.9166 14.9154 20.9166 15.6668V24.1668C20.9166 24.9183 20.6181 25.6389 20.0867 26.1703C19.5554 26.7017 18.8347 27.0002 18.0833 27.0002H3.91659C3.16514 27.0002 2.44447 26.7017 1.91312 26.1703C1.38176 25.6389 1.08325 24.9183 1.08325 24.1668V15.6668Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -123,7 +177,7 @@
 				
 			<div class="section-bikes__cards__right">
 	
-				<div class="section-bikes__cards__card">
+				<div class="section-bikes__card">
 					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 30 34" fill="none">
 						<g clip-path="url(#clip0_158_475)">
 						  <rect width="30" height="34" fill="white"/>
@@ -141,7 +195,7 @@
 						Our insurance covers any damage that happens during motorcycle rentals. Plus, riders have the option to buy damage and liability insurance.
 					</p>
 				</div>
-				<div class="section-bikes__cards__card">
+				<div class="section-bikes__card">
 					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
 						<g clip-path="url(#clip0_158_478)">
 						  <rect width="30" height="30" fill="white"/>
