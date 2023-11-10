@@ -32,7 +32,7 @@ section {
 	height: 100vh;
 	background-position: cover;
 	background: #b4a5a5;
-	background-image: url(/assets/images/bruno-van-der-kraan-truck-unsplash.jpeg);
+	background-image: url(../assets/images/bruno-van-der-kraan-truck-unsplash.jpeg);
 	background-position: center;
 	background-size: cover;
 }
@@ -50,7 +50,7 @@ section {
 .section2 {
 	width: 100vw;
 	height: 70vh;
-	background-image: url(/assets/images/ducati-pov.jpeg);
+	background-image: url(../assets/images/ducati-pov.jpeg);
 	background-position: center;
 	background-size: cover;
 	padding-top: 265px;
@@ -70,7 +70,7 @@ section {
 .section3 {
 	width: 100vw;
 	height: 100vh;
-	background-image: url(/assets/images/pexels-clément-proust-moreogromsdal.jpeg);
+	background-image: url(../assets/images/pexels-clément-proust-moreogromsdal.jpeg);
 	background-position: left;
 	background-size: cover;
 	background-position-x: -150px;
@@ -96,7 +96,7 @@ section {
 .section4 {
 	width: 100vw;
 	height: 100vh;
-	background-image: url(/assets/images/bergen-ehsan-haque.jpeg);
+	background-image: url(../assets/images/bergen-ehsan-haque.jpeg);
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -128,7 +128,7 @@ section {
 .section5__top-container {
 	width: 100%;
 	height: 100vh;
-	background-image: url(/assets/images/eberhard-grossgasteiger.jpeg);
+	background-image: url(../assets/images/eberhard-grossgasteiger.jpeg);
 	background-position: center;
 	background-size: cover;	
 }
@@ -145,7 +145,7 @@ section {
 .section5__bottom-container {
 	width: 100%;
 	height: 100vh;
-	background-image: url(/assets/images/forrest-luke-miller.jpeg);
+	background-image: url(../assets/images/forrest-luke-miller.jpeg);
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -201,7 +201,7 @@ section {
 	height: 100vh;
 	display: flex;
 	align-items: flex-end;
-	background-image: url(/assets/images/lofotsunset-tobias-bjørkli.jpeg);
+	background-image: url(../assets/images/lofotsunset-tobias-bjørkli.jpeg);
 	background-position: center;
 	background-size: cover;
 }
