@@ -37,15 +37,15 @@
 	display: flex;
 	gap: 10px;
 	position: absolute;
-	top: 90%;
+	top: 100%;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translateY(-150%) translateX(-50%);
 }
 
 .slideshow__dot {
-	width: 1rem;
-	height: 1rem;
-	border: 3px solid #4d4d4d;
+	width: 0.8rem;
+	height: 0.8rem;
+	border: 3px solid var(--color-primary);
 	border-radius: 100%;
 	opacity: 0.7;
 }
