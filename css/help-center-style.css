@@ -1,0 +1,52 @@
+
+.help-center {
+	width: 100%;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: var(--font-size-small);
+	background: var(--background);
+}
+
+.help-center__info div {
+	padding: var(--spacing-large) 20%;
+}
+
+h1 {
+	padding: var(--spacing-small) 0 var(--spacing-large);
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+.help-center__info>h3 {
+	padding: var(--spacing-small) 20% var(--spacing-small);
+}
+
+.help-center div::first-line {
+	font-weight: 500;
+}
+
+.help-center__info div:nth-of-type(2n-1){
+	background: var(--color-primary);
+}
+
+.destinations {
+	background: var(--color-primary);
+}
+
+.destinations, .rentals {
+	padding: var(--spacing-small) 20% var(--spacing-large);
+}
+
+.help-center .info__logo {
+	margin: 0 auto;
+	padding: var(--spacing-large) 0 var(--spacing-large);
+}
+
+.help-center__links {
+	display: flex;
+	flex-direction: column;
+}
+
