@@ -1,5 +1,5 @@
 .menu-drawer {
-	width: 30vw;
+	width: 100vw;
 	height: 50vh;
 	display: flex;	
 	flex-direction: column;
@@ -15,8 +15,6 @@
 .menu-drawer--visible {  /* 	Change on: JS function on hamburger-click	 */
 	top: 0;
 }	
-
-
 
 .menu-drawer__close {
 	position: absolute;
