@@ -11,7 +11,7 @@ header {
 	height: 75px;
 	padding: 10px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 header .header__hamburger-button {
@@ -335,16 +335,20 @@ footer {
 	background: var(--background);
 }
 
-.help-center div {
-	padding-bottom: var(--spacing-large);
-}
-
 .help-center__info div {
 	padding: var(--spacing-large) 20%;
 }
 
-h3 {
+h1 {
+	padding: var(--spacing-small) 0 var(--spacing-large);
+}
+
+h1, h3 {
 	text-align: center;
+}
+
+.help-center__info>h3 {
+	padding: var(--spacing-small) 20% var(--spacing-small);
 }
 
 .help-center div::first-line {
@@ -360,10 +364,16 @@ h3 {
 }
 
 .destinations, .rentals {
-	padding: 0 20%
+	padding: var(--spacing-small) 20% var(--spacing-large);
 }
 
 .help-center .info__logo {
 	margin: 0 auto;
+	padding: var(--spacing-large) 0 var(--spacing-large);
+}
+
+.help-center__links {
+	display: flex;
+	flex-direction: column;
 }
 
