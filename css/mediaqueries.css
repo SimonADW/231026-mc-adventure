@@ -30,7 +30,7 @@
 	}
 
 	.section4__caption-container {
-		font-size: var(--font-size-large)
+		font-size: var(--font-size-base)
 	}
 
 	.section-info__about {
@@ -51,6 +51,10 @@
 @media screen and (min-width: 840px) {
 	.hero__heading {
 		font-size: var(--font-size-xlarge);
+	}
+
+	.section4 img {
+		display: block;
 	}
 
 	.section5 {
@@ -94,8 +98,5 @@
 	.section-bikes p:last-of-type {
 		grid-row: 5;
 	}
-
-
-
 
 }
