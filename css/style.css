@@ -7,6 +7,17 @@ body {
 	color: var(--foreground);
 }
 
+a {
+	transition: 300ms;
+}
+
+a:hover {
+	transform: scale(1.03);
+	color: var(--color-normal);
+	text-decoration: underline;
+} 
+
+
 /* Header */
 header {
 	position: absolute;
@@ -108,17 +119,28 @@ header button:hover {
 
 .section4__caption-container {
 	width: 100%;
-	height: 30%;
+	height: 28%;
 	background: var(--color-primary);
 	display: flex;
 	align-items: center;	
-	justify-content: center;
 	padding: 10%;
 	font-size: var(--font-size-small);
 }
 
+.section4__caption-container p {
+	min-width: 480px;
+}
+
 .section4__caption-container p::first-line {
 	font-weight: 500;
+}
+
+.section4 img {
+	width: 16rem;
+	height: auto;
+	margin-left: var(--spacing-small);
+	transform: translateY(-10%);
+	display: none;
 }
 
 
@@ -203,15 +225,6 @@ header button:hover {
 	font-weight: 500;
 }
 
-.section-bikes p:last-of-type {
-	transition: 300ms;
-}
-
-.section-bikes p:last-of-type:hover {
-	transform: scale(1.05);
-	color: var(--color-normal);
-	text-decoration: underline;
-} 
 
 /* Section Contact */
 .section-contact {
