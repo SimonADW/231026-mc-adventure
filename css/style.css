@@ -203,6 +203,16 @@ header button:hover {
 	font-weight: 500;
 }
 
+.section-bikes p:last-of-type {
+	transition: 300ms;
+}
+
+.section-bikes p:last-of-type:hover {
+	transform: scale(1.05);
+	color: var(--color-normal);
+	text-decoration: underline;
+} 
+
 /* Section Contact */
 .section-contact {
 	width: 100vw;

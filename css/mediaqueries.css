@@ -52,4 +52,50 @@
 	.hero__heading {
 		font-size: var(--font-size-xlarge);
 	}
+
+	.section5 {
+		height: 100vh;
+		display: flex;
+	}
+
+	.section-bikes {
+		display: grid;
+		grid-template-columns: repeat(16, 6.25%);
+		grid-template-rows: 1fr 3fr 1fr;
+		gap: 0;
+	}
+
+	.section-bikes__slideshow {
+		grid-column: 5 / span 8;
+		grid-row-start: 2;		
+		height: 100%;
+	}	
+
+	.section-bikes__cards__left {
+		grid-column: 2 / span 2;
+		grid-row-start: 2;
+		width: auto;
+	}
+
+	.section-bikes__cards__right {
+		grid-column: 14 / span 2;
+		grid-row-start: 2;
+		width: auto;
+	}
+
+	.section-bikes__card p {
+		font-size: var(--font-size-xsmall);
+	}
+
+	.section-bikes>p {
+		grid-column: 1 / span all;
+	}
+
+	.section-bikes p:last-of-type {
+		grid-row: 5;
+	}
+
+
+
+
 }
