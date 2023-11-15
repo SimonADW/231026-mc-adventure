@@ -10,6 +10,18 @@
 
 /* Tablet and Desktop */
 @media screen and (min-width: 450px) {
+	.pop-drawer {
+		max-width: 900px;
+	}
+
+	.pop-drawer__accordion {
+		max-width: 25rem;
+	}
+
+	.pop-drawer__accordion-container {
+		width: 17rem;
+	}
+
 	.hero__heading {
 		flex-flow: row nowrap;
 		justify-content: center;
@@ -68,6 +80,10 @@
 
 /*  Desktop */
 @media screen and (min-width: 840px) {
+	.menu-drawer {
+		max-width: 400px;
+	}
+
 	.hero__heading {
 		font-size: var(--font-size-xlarge);
 	}
