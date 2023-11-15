@@ -33,6 +33,19 @@
 		font-size: var(--font-size-base)
 	}
 
+	.section5__bottom-container p:nth-of-type(2) {
+		transform: translateX(10%);
+	}
+	.section5__bottom-container p:nth-of-type(3) {
+		transform: translateX(15%);
+	}
+	.section5__bottom-container p:nth-of-type(4) {
+		transform: translateX(20%);
+	}
+	.section5__bottom-container p:nth-of-type(5) {
+		transform: translateX(25%);
+	}
+
 	.section-info__about {
 		display: block;
 	}
@@ -44,6 +57,8 @@
 		gap: 0;
 		padding: var(--spacing-large) var(--spacing-small)
 	}
+
+
 }
 
 
