@@ -30,9 +30,13 @@
 	}
 
 	.section4__caption-container {
-		font-size: var(--font-size-base)
+		font-size: var(--font-size-base)		
 	}
 
+	.section4__caption-container p {
+		min-width: 480px;
+	}
+	
 	.section5__bottom-container p:nth-of-type(2) {
 		transform: translateX(10%);
 	}

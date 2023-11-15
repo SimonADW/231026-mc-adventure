@@ -127,10 +127,6 @@ header button:hover {
 	font-size: var(--font-size-small);
 }
 
-.section4__caption-container p {
-	min-width: 480px;
-}
-
 .section4__caption-container p::first-line {
 	font-weight: 500;
 }

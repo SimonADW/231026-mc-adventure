@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/slideshow.css">
 	<link rel="stylesheet" href="css/variables.css">
 	<link rel="stylesheet" href="css/menu-drawer.css">
+	<link rel="stylesheet" href="css/pop-drawer.css">
 	<link rel="stylesheet" href="css/help-center-style.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaqueries.css">
@@ -37,6 +38,52 @@
 				<a href="help-center.html#top">Information</a>
 				<a href="help-center.html#rentals">Rentals</a>
 				<a href="help-center.html#destinations">Destinations</a>
+			</div>
+		</div>
+
+		<div class="pop-drawer">
+			<header>
+				<svg class="pop-drawer__close" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 55 55" fill="none">
+					<path d="M44.7928 41.1447C45.2771 41.6291 45.5492 42.286 45.5492 42.9709C45.5492 43.6559 45.2771 44.3127 44.7928 44.7971C44.3085 45.2814 43.6516 45.5535 42.9666 45.5535C42.2817 45.5535 41.6248 45.2814 41.1405 44.7971L27.5 31.1524L13.8553 44.7928C13.371 45.2771 12.7141 45.5492 12.0291 45.5492C11.3442 45.5492 10.6873 45.2771 10.203 44.7928C9.71863 44.3085 9.44653 43.6516 9.44653 42.9666C9.44653 42.2817 9.71863 41.6248 10.203 41.1404L23.8477 27.5L10.2073 13.8553C9.72292 13.371 9.45083 12.7141 9.45083 12.0291C9.45083 11.3442 9.72292 10.6873 10.2073 10.2029C10.6916 9.71861 11.3485 9.44651 12.0334 9.44651C12.7184 9.44651 13.3753 9.71861 13.8596 10.2029L27.5 23.8477L41.1447 10.2008C41.6291 9.71646 42.286 9.44437 42.9709 9.44437C43.6559 9.44437 44.3128 9.71646 44.7971 10.2008C45.2814 10.6851 45.5535 11.342 45.5535 12.027C45.5535 12.7119 45.2814 13.3688 44.7971 13.8531L31.1524 27.5L44.7928 41.1447Z" fill="black"/>
+				</svg>	
+			</header>
+
+			<div class="pop-drawer__accordion-container">
+				<p>Where did you hear about us?</p>
+				
+				<div class="pop-drawer__accordion">
+					<button class="pop-drawer__accordion-button">
+						<svg class="accordion-arrow xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 34 34" fill="none">
+							<path d="M30.5235 11.2476C30.125 10.8493 29.5846 10.6255 29.0211 10.6255C28.4577 10.6255 27.9173 10.8493 27.5188 11.2476L17 21.7664L6.48127 11.2476C6.08049 10.8606 5.54371 10.6464 4.98654 10.6512C4.42937 10.6561 3.8964 10.8795 3.50241 11.2735C3.10841 11.6675 2.88493 12.2005 2.88009 12.7577C2.87525 13.3148 3.08944 13.8516 3.47652 14.2524L15.4976 26.2735C15.8961 26.6719 16.4365 26.8957 17 26.8957C17.5635 26.8957 18.1039 26.6719 18.5024 26.2735L30.5235 14.2524C30.9219 13.8539 31.1457 13.3135 31.1457 12.75C31.1457 12.1865 30.9219 11.6461 30.5235 11.2476Z" fill="white"/>
+						</svg>
+						Select
+					</button>
+					<div id="feedback" class="pop-drawer__accordion-content pop-drawer__accordion-content--visible">
+						<button class="pop-drawer__accordion-content__button" data-feedback="some">Social Media</button>
+						<button class="pop-drawer__accordion-content__button" data-feedback="friend">Friend or Co-worker</button>
+						<button class="pop-drawer__accordion-content__button" data-feedback="assignment">Fictional Student assignment</button>
+						<button class="pop-drawer__accordion-content__button" data-feedback="other">Other</button>
+					</div>
+				</div>
+
+				<p class="pop-drawer__thanks">
+					Thank you! We apprechiate your feedback
+				</p>
+			</div>
+
+			<div class="pop-drawer__logo">
+				<a href="index.html">
+					<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 219 124" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.98615 117.727C1.68286 117.271 1.08026 115.878 1.6402 114.616L40.6487 26.6927C41.2087 25.4306 42.7191 24.7771 44.0224 25.2329C45.3257 25.6888 45.9283 27.0815 45.3683 28.3436L6.3598 116.267C5.79987 117.529 4.28943 118.183 2.98615 117.727Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M61.2868 81.6178C59.9523 81.9727 58.5122 81.2002 58.0703 79.8923L40.5921 28.1607C40.1503 26.8529 40.8739 25.5049 42.2084 25.15C43.543 24.7951 44.983 25.5676 45.4249 26.8755L62.9031 78.6071C63.345 79.915 62.6214 81.2629 61.2868 81.6178Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M50.5731 55.3061C49.2736 54.8394 48.6525 53.4286 49.1856 52.155L69.6994 3.15499C70.2326 1.88139 71.7182 1.22725 73.0177 1.69394C74.3171 2.16063 74.9383 3.57141 74.4051 4.84502L53.8914 53.845C53.3582 55.1186 51.8725 55.7728 50.5731 55.3061Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M112.996 98.2931C111.702 98.7751 110.207 98.1391 109.657 96.8727L69.7096 4.87264C69.1596 3.60616 69.7627 2.18878 71.0566 1.70682C72.3505 1.22486 73.8451 1.86084 74.3951 3.12731L114.343 95.1273C114.893 96.3938 114.29 97.8112 112.996 98.2931Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M137.671 51.5427L151.806 21.8599L148.194 20.1401L125 66.5H129.5L134.847 57.4731L149.634 49.932L165.857 65.6849L168.643 62.8151L150.366 45.0681L137.671 51.5427Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M187.924 117.323C186.641 117.833 185.188 117.207 184.677 115.924L147.677 22.9242C147.167 21.6413 147.793 20.1875 149.076 19.6771C150.359 19.1667 151.812 19.7929 152.323 21.0759L189.323 114.076C189.833 115.359 189.207 116.813 187.924 117.323Z" fill="black"/>
+						<path d="M184.5 124C137.871 104.5 41.4617 40.916 126.871 40.916L137.871 43.2779C138.626 43.278 142.347 44.9646 140.5 45C70.451 47.4688 140.5 91.5 218.5 109L184.5 124Z" fill="black"/>
+					  </svg>
+				</a>
+				Ride fun, ride safe!
 			</div>
 		</div>
 
