@@ -1,0 +1,72 @@
+.partner__header {
+	position: static;	
+}
+
+main {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-small);
+}
+
+main h1 {
+	text-align: center;
+}
+
+.partner__accordion-container {
+	width: 100%;	
+	height: fit-content;
+	display: flex;
+	justify-content: center;	
+	gap: var(--spacing-small);
+}
+
+.partner__accordion {
+	width: 100%;	
+	max-width: 15rem;
+}
+
+.partner__accordion-button {
+	width: 100%;
+	height: 1.5rem;
+	background: var(--color-normal);
+	color: var(--background);
+	border-radius: 5px;
+	display: flex;	
+}
+
+.partner__accordion-button:hover {
+	background: var(--color-hover);
+}
+
+.partner__accordion-button:active {
+	background: var(--color-active);
+}
+
+.accordion-arrow {
+	margin: 0 0.5rem;
+}
+
+.partner__accordion-button--expanded {
+	border-radius: 5px 5px 0 0;
+}
+
+.partner__accordion-content {   
+	border-radius: 0 0 5px 5px;
+	background: var(--color-primary);
+	font-weight: 300;
+	/* display: none; */
+}
+
+.partner__accordion-content--visible {
+	display: flex;
+}
+
+.partner__accordion-content button {
+	width: 100%;
+	text-align: start;
+	padding-left: 0.2rem;
+}
+.partner__accordion-content button:hover {
+	background: var(--background);
+}
