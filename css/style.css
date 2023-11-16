@@ -85,7 +85,7 @@ header button:hover {
 	height: 100vh;
 	background-image: url(../assets/images/pexels-clément-proust-moreogromsdal.jpeg);  /* @TODO bg-image not showing on netlify-link */
 	background-size: cover;
-	background-position-x: -150px;
+	/* background-position-x: -150px; */
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -181,13 +181,11 @@ header button:hover {
 	font-size: var(--font-size-xlarge);
 	font-weight: 500;
 	color: var(--background);
-
-
 }
 
 
 /* Section 6 Bikes - Slideshow in separate stylesheet */
-.section-bikes {		/* @TODO set up grid for Desktop  */
+.section-bikes {
 	width: 100vw;
 	height: fit-content;	
 	display: flex;
