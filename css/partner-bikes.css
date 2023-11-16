@@ -24,6 +24,7 @@ main h1 {
 .partner__accordion {
 	width: 100%;	
 	max-width: 15rem;
+	position: relative;
 }
 
 .partner__accordion-button {
@@ -55,7 +56,8 @@ main h1 {
 	border-radius: 0 0 5px 5px;
 	background: var(--color-primary);
 	font-weight: 300;
-	/* display: none; */
+	position: absolute;
+	display: none;
 }
 
 .partner__accordion-content--visible {
@@ -70,3 +72,25 @@ main h1 {
 .partner__accordion-content button:hover {
 	background: var(--background);
 }
+
+.partner__card-container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;	
+	justify-content: center;
+	gap: var(--spacing-small);
+}
+
+.partner-card {
+	max-width: 400px;	
+	/* min-width: 400px; */
+	border: 1px solid var(--color-primary);
+	padding: 0.5rem;
+	font-size: var(--font-size-xsmall);
+}
+
+.partner-card__content div:nth-child(2) {
+	font-weight: 600;
+	font-size: var(--font-size-base);
+}
+
