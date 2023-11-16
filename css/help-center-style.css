@@ -19,6 +19,8 @@
 h1 {
 	margin-right: 1rem;
 	font-weight: 400;
+	font-size: var(--font-size-large);
+	transform: translateY(20%);
 }
 
 h3 {
