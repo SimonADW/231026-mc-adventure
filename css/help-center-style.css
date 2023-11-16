@@ -8,15 +8,20 @@
 	background: var(--background);
 }
 
+.help-center__header {
+	position: static;	
+}
+
 .help-center__info div {
-	padding: var(--spacing-large) 20%;
+	padding: var(--spacing-large) 10%;
 }
 
 h1 {
-	padding: var(--spacing-small) 0 var(--spacing-large);
+	margin-right: 1rem;
+	font-weight: 400;
 }
 
-h1, h3 {
+h3 {
 	text-align: center;
 }
 
@@ -37,7 +42,7 @@ h1, h3 {
 }
 
 .destinations, .rentals {
-	padding: var(--spacing-small) 20% var(--spacing-large);
+	padding: var(--spacing-small) 10% var(--spacing-large);
 }
 
 .help-center .info__logo {

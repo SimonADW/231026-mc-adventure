@@ -74,6 +74,15 @@
 		padding: var(--spacing-large) var(--spacing-small)
 	}
 
+		/* Help center */
+	.help-center__info div {
+		padding: var(--spacing-large) 20%;
+	}
+
+	.destinations, .rentals {
+		padding: var(--spacing-small) 20% var(--spacing-large);
+	}
+		
 
 }
 
