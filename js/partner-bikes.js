@@ -1,10 +1,35 @@
+// Accordions (filter-buttons)
+
+const partnerAccordions = document.querySelectorAll(".partner__accordion-button");
+const accordionTypeContent = document.querySelector(".accordion__content-type");
+const accordionMakeContent = document.querySelector(".accordion__content-make");
+
 const filterButtons = document.querySelectorAll(".partner__accordion-content__button");
 const cardContainer = document.querySelector(".partner__card-container");
 
+const closeAccordions = ()=> {
+		partnerAccordions.forEach((button)=>{		
+		button.classList.remove("partner__accordion-button--expanded");
+		button.nextElementSibling.classList.remove("partner__accordion-content--visible");
+	});
+};
+
+const toggleAccordionFilterList = (event)=> {	
+	event.currentTarget.classList.toggle("partner__accordion-button--expanded");
+	event.currentTarget.nextElementSibling.classList.toggle("partner__accordion-content--visible");
+};
+
+partnerAccordions.forEach((button)=> {
+	button.addEventListener("click", toggleAccordionFilterList);
+});
+
+filterButtons.forEach(button => {
+	button.addEventListener("click", closeAccordions);	
+});
 
 
 
-
+// Render cards
 
 const allCards = [
 	{

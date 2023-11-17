@@ -58,6 +58,7 @@ main h1 {
 	font-weight: 300;
 	position: absolute;
 	display: none;
+	flex-flow: column nowrap;
 }
 
 .partner__accordion-content--visible {
