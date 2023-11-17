@@ -8,6 +8,7 @@
 	position: absolute;
 	top: -50%;
 	right: 0;
+	z-index: 2;
 	background: var(--background);
 	transition: 400ms;
 }

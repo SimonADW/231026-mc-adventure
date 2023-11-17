@@ -235,22 +235,22 @@ header button:hover {
 
 .section-contact__form-container {
 	width: 100%;
-	height: 35%;
+	height: fit-content;
 	background: var(--color-primary);
 	padding-top: var(--spacing-small);
 	font-weight: 500;	
 	display: flex;
 	flex-direction: column;	
 	align-items: center;
-	gap: var(--spacing-small);
-
 }
 
 .section-contact__form-heading {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: var(--spacing-small);
 }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -270,9 +270,23 @@ input {
 	width: 150px;
 	border-radius: 10px;
 	border: none;
+	margin-bottom: var(--spacing-small);
 	background: var(--color-normal);
 	color: var(--background);
 }
+
+.thanksSubmitMessage {
+	font-weight: 400;
+	margin-bottom: var(--spacing-small);
+	text-align: center;
+	padding: 10px;
+	display: none;
+}
+
+.thanksSubmitMessage--visible {
+	display: block;
+}
+
 
 /* Section Information */
 .info__logo {

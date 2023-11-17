@@ -54,8 +54,20 @@ accordionButton.addEventListener("click", toggleAccordionContent);
 
 
 // Tanks for contact-drawer
+const thanksForSubmitMessage = document.querySelector(".thanksSubmitMessage")
+const emailInput = document.querySelector("input");
 
-
+const displayThanksForSubmitting = (event)=> {
+	event.preventDefault();
+	/* @TODO: add condition valid input */
+	if (emailInput.checkValidity()) {  
+	thanksForSubmitMessage.classList.add("thanksSubmitMessage--visible");
+	}
+}
 
 
 // Submit e-mail
+const submitButton = document.querySelector(".section-contact__button");
+
+submitButton.addEventListener("click", displayThanksForSubmitting);
+
