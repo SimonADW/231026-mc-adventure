@@ -19,11 +19,11 @@ const accordionContent = document.querySelector(".pop-drawer__accordion-content"
 const accordionContentButtons = document.querySelectorAll(".pop-drawer__accordion-content__button");
 const thanksMessage = document.querySelector(".pop-drawer__thanks");
 
-window.addEventListener("DOMContentLoaded", ()=> {
+const displayPopDrawer = ()=> {
 	setTimeout(()=> {
 		popDrawer.classList.add("pop-drawer__visible");
-	}, 300)
-})
+	}, 400)
+};
 
 closePopDrawerButton.addEventListener("click", ()=>{
 	popDrawer.classList.remove("pop-drawer__visible");
@@ -57,9 +57,7 @@ accordionButton.addEventListener("click", toggleAccordionContent);
 const thanksForSubmitMessage = document.querySelector(".thanksSubmitMessage")
 const emailInput = document.querySelector("input");
 
-const displayThanksForSubmitting = (event)=> {
-	event.preventDefault();
-	/* @TODO: add condition valid input */
+const displayThanksForSubmitting = ()=> {	
 	if (emailInput.checkValidity()) {  
 	thanksForSubmitMessage.classList.add("thanksSubmitMessage--visible");
 	}
@@ -69,5 +67,9 @@ const displayThanksForSubmitting = (event)=> {
 // Submit e-mail
 const submitButton = document.querySelector(".section-contact__button");
 
-submitButton.addEventListener("click", displayThanksForSubmitting);
+submitButton.addEventListener("click", (event)=> {
+	event.preventDefault();
+	displayThanksForSubmitting();
+	displayPopDrawer();
+});
 

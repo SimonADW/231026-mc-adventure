@@ -11,6 +11,7 @@
 	z-index: 2;
 	background: var(--background);
 	transition: 400ms;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .menu-drawer--visible {  /* 	Change on: JS function on hamburger-click	 */
