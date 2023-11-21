@@ -22,7 +22,7 @@ const thanksMessage = document.querySelector(".pop-drawer__thanks");
 const displayPopDrawer = ()=> {
 	setTimeout(()=> {
 		popDrawer.classList.add("pop-drawer__visible");
-	}, 400)
+	}, 4000)
 };
 
 closePopDrawerButton.addEventListener("click", ()=>{
@@ -54,22 +54,29 @@ accordionButton.addEventListener("click", toggleAccordionContent);
 
 
 // Tanks for contact-drawer
-const thanksForSubmitMessage = document.querySelector(".thanksSubmitMessage")
+const thanksForSubmitMessage = document.querySelector(".thanks-submit-message")
 const emailInput = document.querySelector("input");
+const errorMessage = document.querySelector(".error-message");
 
-const displayThanksForSubmitting = ()=> {	
+const displayThanksAndPopDrawer = ()=> {	
 	if (emailInput.checkValidity()) {  
-	thanksForSubmitMessage.classList.add("thanksSubmitMessage--visible");
+		thanksForSubmitMessage.classList.add("thanks-submit-message--visible");
+		displayPopDrawer();
+	} else {
+		errorMessage.style.display = "block";
 	}
 }
 
+const inputEmailField = document.querySelector("input[type='email']");
+inputEmailField.addEventListener("focus", ()=> {
+	errorMessage.style.display = "none"
+})
 
 // Submit e-mail
 const submitButton = document.querySelector(".section-contact__button");
 
 submitButton.addEventListener("click", (event)=> {
 	event.preventDefault();
-	displayThanksForSubmitting();
-	displayPopDrawer();
+	displayThanksAndPopDrawer();
 });
 

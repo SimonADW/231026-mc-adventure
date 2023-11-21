@@ -275,7 +275,7 @@ input {
 	color: var(--background);
 }
 
-.thanksSubmitMessage {
+.thanks-submit-message {
 	font-weight: 400;
 	margin-bottom: var(--spacing-small);
 	text-align: center;
@@ -283,10 +283,16 @@ input {
 	display: none;
 }
 
-.thanksSubmitMessage--visible {
+.thanks-submit-message--visible {
 	display: block;
 }
 
+.error-message {
+	margin-bottom: var(--spacing-small);
+	text-align: center;
+	padding: 10px;
+	display: none;
+}
 
 /* Section Information */
 .info__logo {
