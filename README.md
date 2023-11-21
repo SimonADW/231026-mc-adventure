@@ -22,6 +22,14 @@ Contributors:
 
 * Teachers: Alejandro Rojas / Mohammadreza Dianat
 
+### Credits
+Photography credits
+* Bruno Van der Kraan
+* Clement Proust
+* Ehsan Haque
+* Eberhard Grossgasteiger
+* Luke Miller
+* Tobias Bjørkli
 
 ### Related links
 Netlify: [Semesterassignment 5 - Hovedprosjekt]()  
