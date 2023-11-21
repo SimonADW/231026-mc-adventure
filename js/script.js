@@ -22,6 +22,7 @@ const thanksMessage = document.querySelector(".pop-drawer__thanks");
 const displayPopDrawer = ()=> {
 	setTimeout(()=> {
 		popDrawer.classList.add("pop-drawer__visible");
+		accordionButton.focus();
 	}, 4000)
 };
 
