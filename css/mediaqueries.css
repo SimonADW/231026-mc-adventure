@@ -28,7 +28,7 @@
 	}
 
 	.section2 {
-		padding-top: 350px;
+		padding-top: 280px;
 	}
 
 	.section2 p {
@@ -95,6 +95,20 @@
 
 	.hero__heading {
 		font-size: var(--font-size-xlarge);
+	}
+
+	.section2 {
+		display: flex;
+		gap: 500px;
+		color: var(--foreground);
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.section2 p {
+		color: black;
+		font-size: var(--font-size-base);
+		width: 350px;
 	}
 
 	.section4 img {
