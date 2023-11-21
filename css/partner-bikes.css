@@ -18,7 +18,7 @@ main h1 {
 	height: fit-content;
 	display: flex;
 	justify-content: center;	
-	gap: var(--spacing-small);
+	gap: 8px;
 }
 
 .partner__accordion {
@@ -52,10 +52,15 @@ main h1 {
 	border-radius: 5px 5px 0 0;
 }
 
+.partner__clear-filter svg {
+	min-width: 30px;
+}
+
 .partner__accordion-content {   
 	border-radius: 0 0 5px 5px;
 	background: var(--color-primary);
 	font-weight: 300;
+	width: 100%;
 	position: absolute;
 	display: none;
 	flex-flow: column nowrap;

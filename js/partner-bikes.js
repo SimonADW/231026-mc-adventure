@@ -55,7 +55,7 @@ const allCards = [
 		model: "Hayabusa",
 		cylinders: 4,
 		engine: 1340,
-		type: "sport-touring",
+		type: "sport",
 		imageUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/octane/P5HAXSECQRFC3J4FNR2RZ2KGDE.jpg"
 	},
 	  
@@ -64,7 +64,7 @@ const allCards = [
 		model: "Road Ultra Glide",
 		cylinders: 2,
 		engine: 1600,
-		type: "custom",
+		type: "cruiser",
 		imageUrl: "https://www.harley-davidson.com/content/dam/h-d/images/product-images/bikes/motorcycle/2023/2023-ultra-limited/2023-ultra-limited-010/360/2023-ultra-limited-010-motorcycle-02.jpg?impolicy=myresize&rw=1600"
 	},
 
@@ -154,7 +154,7 @@ const allCards = [
 		model: "Panigale V4",
 		cylinders: 4,
 		engine: 1103,
-		type: "superbike",
+		type: "sport",
 		imageUrl: "https://media.gq-magazine.co.uk/photos/5d24fc7217647800088b648d/master/w_1600%2Cc_limit/panigale-v4-studio-side.jpeg"
 	},
 
@@ -258,12 +258,33 @@ const createAndRenderCard = (object)=> {
 };
 
 const renderArrayOfCards = (cardsArray)=> {
+	cardContainer.textContent = "";  /* @TODO; Here´s the problem*/
 	cardsArray.forEach((card)=> {
 		createAndRenderCard(card);
 	})
 }
 
+
+// Filter section
+let filteredCards = [];
+
+//Filter by type
+filterButtons.forEach((filterButton)=> {
+	const filterCardsType = (event)=> {
+		let currentButton = event.currentTarget.dataset.filterBy;
+		filteredCards = allCards.filter((card) => {
+			return card.type.toLowerCase() === currentButton || card.make.toLowerCase() === currentButton; 
+		});
+		renderArrayOfCards(filteredCards);
+	};	
+	filterButton.addEventListener("click", filterCardsType);
+});
+
+// Clear filter
+const clearButton = document.querySelector(".partner__clear-filter");
+clearButton.addEventListener("click", ()=> {
+	renderArrayOfCards(allCards);	
+});
+
+//Render on page load
 renderArrayOfCards(allCards);
-
-
-
