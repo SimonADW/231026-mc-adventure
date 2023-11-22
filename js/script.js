@@ -11,6 +11,8 @@ closeDrawerButton.addEventListener("click", ()=> {
 	menuDrawer.classList.toggle("menu-drawer--visible");
 });
 
+
+
 // Pop Drawer
 const closePopDrawerButton = document.querySelector(".pop-drawer__close")
 const popDrawer = document.querySelector(".pop-drawer")
@@ -46,6 +48,16 @@ accordionContentButtons.forEach((button)=>{
 		closeAndDisplayThanks();
 	})
 });
+
+
+document.addEventListener("keydown", (event)=> {
+	if (event.key === "Escape") {
+		console.log();
+		popDrawer.classList.remove("pop-drawer__visible");
+	};
+});
+
+
 
 accordionButton.addEventListener("click", toggleAccordionContent);
 
