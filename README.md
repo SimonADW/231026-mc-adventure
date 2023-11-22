@@ -32,8 +32,8 @@ Photography credits
 * Tobias Bjørkli
 
 ### Related links
-Netlify: [Semesterassignment 5 - Hovedprosjekt]()  
-GitHub: [MC Adventure repository]()
+Netlify: [Semesterassignment 5 - Hovedprosjekt](https://semesterassignment5-simon-winter.netlify.app/)  
+GitHub: [MC Adventure repository](https://github.com/SimonADW/231026-mc-adventure)
 
 [Simon Winter](https://github.com/SimonADW)  
 
