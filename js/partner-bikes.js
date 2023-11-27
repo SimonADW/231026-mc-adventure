@@ -267,15 +267,25 @@ const renderArrayOfCards = (cardsArray)=> {
 
 // Filter section
 let filteredCards = [];
-// let filterIsActive = false;  @TODO add filter both functionality
+let filterIsActive = false;
 
 //Filter by type
+
+//Filter by type or make
 filterButtons.forEach((filterButton)=> {
 	const filterCardsType = (event)=> {
 		let currentButton = event.currentTarget.dataset.filterBy;
-		filteredCards = allCards.filter((card) => {
-			return card.type.toLowerCase() === currentButton || card.make.toLowerCase() === currentButton; 
-		});
+		if (filterIsActive === false) {
+				filteredCards = allCards.filter((card) => {
+					return card.type.toLowerCase() === currentButton || card.make.toLowerCase() === currentButton; 
+				});
+				filterIsActive = true;
+			} else {
+				filteredCards = filteredCards.filter((card) => {
+					return card.type.toLowerCase() === currentButton || card.make.toLowerCase() === currentButton; 	
+				});
+				filterIsActive = true;
+			}	
 		renderArrayOfCards(filteredCards);
 	};	
 	filterButton.addEventListener("click", filterCardsType);
@@ -284,8 +294,24 @@ filterButtons.forEach((filterButton)=> {
 // Clear filter
 const clearButton = document.querySelector(".partner__clear-filter");
 clearButton.addEventListener("click", ()=> {
+	filterIsActive = false;
 	renderArrayOfCards(allCards);	
 });
 
 //Render on page load
 renderArrayOfCards(allCards);
+
+
+
+// Backup of "old" filter function
+
+// filterButtons.forEach((filterButton)=> {
+// 	const filterCardsType = (event)=> {
+// 		let currentButton = event.currentTarget.dataset.filterBy;
+// 		filteredCards = allCards.filter((card) => {
+// 			return card.type.toLowerCase() === currentButton || card.make.toLowerCase() === currentButton; 
+// 		});
+// 		renderArrayOfCards(filteredCards);
+// 	};	
+// 	filterButton.addEventListener("click", filterCardsType);
+// });
