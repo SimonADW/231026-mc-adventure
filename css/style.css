@@ -89,10 +89,11 @@ header button:hover {
 	background-image: url(../assets/images/pexels-clement-proust-moreogromsdal.jpeg);  /* @TODO bg-image not showing on netlify-link */
 	background-size: cover;
 	background-position: left;
-	/* background-position-x: -150px; */
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	border-top: 2rem solid var(--color-primary);
+	border-bottom: 2rem solid var(--color-primary);
 }
 
 .section3>div {
