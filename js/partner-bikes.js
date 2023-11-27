@@ -258,7 +258,7 @@ const createAndRenderCard = (object)=> {
 };
 
 const renderArrayOfCards = (cardsArray)=> {
-	cardContainer.textContent = "";  /* @TODO; Here´s the problem*/
+	cardContainer.textContent = "";
 	cardsArray.forEach((card)=> {
 		createAndRenderCard(card);
 	})
@@ -267,6 +267,7 @@ const renderArrayOfCards = (cardsArray)=> {
 
 // Filter section
 let filteredCards = [];
+// let filterIsActive = false;  @TODO add filter both functionality
 
 //Filter by type
 filterButtons.forEach((filterButton)=> {

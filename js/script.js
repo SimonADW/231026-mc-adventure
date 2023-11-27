@@ -57,16 +57,10 @@ document.addEventListener("keydown", (event)=> {
 	};
 });
 
-
-
 accordionButton.addEventListener("click", toggleAccordionContent);
 
 
-
-
-
-
-// Tanks for contact-drawer
+// Thanks for contact-drawer
 const thanksForSubmitMessage = document.querySelector(".thanks-submit-message")
 const emailInput = document.querySelector("input");
 const errorMessage = document.querySelector(".error-message");
