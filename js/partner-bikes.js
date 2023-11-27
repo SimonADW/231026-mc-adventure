@@ -269,7 +269,6 @@ const renderArrayOfCards = (cardsArray)=> {
 let filteredCards = [];
 let filterIsActive = false;
 
-//Filter by type
 
 //Filter by type or make
 filterButtons.forEach((filterButton)=> {
@@ -300,18 +299,3 @@ clearButton.addEventListener("click", ()=> {
 
 //Render on page load
 renderArrayOfCards(allCards);
-
-
-
-// Backup of "old" filter function
-
-// filterButtons.forEach((filterButton)=> {
-// 	const filterCardsType = (event)=> {
-// 		let currentButton = event.currentTarget.dataset.filterBy;
-// 		filteredCards = allCards.filter((card) => {
-// 			return card.type.toLowerCase() === currentButton || card.make.toLowerCase() === currentButton; 
-// 		});
-// 		renderArrayOfCards(filteredCards);
-// 	};	
-// 	filterButton.addEventListener("click", filterCardsType);
-// });
