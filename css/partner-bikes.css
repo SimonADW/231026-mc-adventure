@@ -26,6 +26,7 @@ main h1 {
 	width: 100%;	
 	max-width: 15rem;
 	position: relative;
+	font-size: var(--font-size-small);
 }
 
 .partner__accordion-button {
@@ -34,7 +35,8 @@ main h1 {
 	background: var(--color-normal);
 	color: var(--background);
 	border-radius: 5px;
-	display: flex;	
+	display: flex;
+	align-items: center;	
 }
 
 .partner__accordion-button:hover {
@@ -46,7 +48,7 @@ main h1 {
 }
 
 .accordion-arrow {
-	margin: 0 0.5rem;
+	margin: 0.25rem 0.35rem;	
 }
 
 .partner__accordion-button--expanded {
