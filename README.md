@@ -31,10 +31,14 @@ Photography credits
 * Luke Miller
 * Tobias Bjørkli
 
+### License  
+License is found in the [Lincese.txt](License.txt) in the [:root folder][]
+
 ### Related links
 Netlify: [Semesterassignment 5 - Hovedprosjekt](https://semesterassignment5-simon-winter.netlify.app/)  
 GitHub: [MC Adventure repository](https://github.com/SimonADW/231026-mc-adventure)
 
-[Simon Winter](https://github.com/SimonADW)  
+
+MIT © [Simon Winter](https://github.com/SimonADW)
 
 [:root folder]: ./
