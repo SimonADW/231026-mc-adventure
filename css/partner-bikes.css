@@ -2,6 +2,33 @@
 	position: static;	
 }
 
+.availability-drawer {
+	height: 50%;
+	width: 90%;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--background);
+	box-shadow: 0 3px 5px #000;
+	padding: 10px;
+}
+
+.availability-drawer--visible {
+	display: flex;
+}
+
+
+.availability-drawer a{
+	color: #C12925;
+	text-decoration: underline;
+}
+
+
 main {
 	min-height: calc(100vh - (110px + 75px)); /* 100vh - (footer + header) */
 	padding: 10px;
@@ -32,7 +59,11 @@ main h1 {
 .partner__accordion-button {
 	width: 100%;
 	height: 1.5rem;
-	background: var(--color-normal);
+	background: linear-gradient(45deg,
+		#C12925 75%,
+		rgb(80, 80, 80) 75%,
+		#353333 85%,
+		#C12925 85%);
 	color: var(--background);
 	border-radius: 5px;
 	display: flex;
@@ -40,11 +71,11 @@ main h1 {
 }
 
 .partner__accordion-button:hover {
-	background: var(--color-hover);
+	background: rgb(98, 25, 25)
 }
 
 .partner__accordion-button:active {
-	background: var(--color-active);
+	background: var(--foreground);
 }
 
 .accordion-arrow {
@@ -99,6 +130,10 @@ main h1 {
 	display: flex;
 	flex-direction: column;	
 	justify-content: flex-end;
+}
+
+.partner-card:hover {
+	box-shadow: 0 3px 5px var(--color-normal);
 }
 
 .partner-card__content div:nth-child(2) {

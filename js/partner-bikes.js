@@ -299,3 +299,20 @@ clearButton.addEventListener("click", ()=> {
 
 //Render on page load
 renderArrayOfCards(allCards);
+
+// Availability drawer
+const availabilityDrawer = document.querySelector(".availability-drawer");
+const availabilityDrawerClose = document.querySelector(".availability-drawer__close");
+const renderedCards = document.querySelectorAll(".partner-card");
+
+availabilityDrawerClose.addEventListener("click", ()=> {
+	availabilityDrawer.classList.remove("availability-drawer--visible");
+});
+
+renderedCards.forEach((card)=> {
+	card.addEventListener("click", ()=> {
+		console.log("hello");
+		availabilityDrawer.classList.add("availability-drawer--visible");
+	});
+});
+

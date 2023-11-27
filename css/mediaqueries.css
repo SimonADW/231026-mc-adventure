@@ -22,6 +22,11 @@
 		width: 17rem;
 	}
 
+	.availability-drawer {
+		height: 50%;
+		width: 50%;
+	}
+
 	.hero__heading {
 		flex-flow: row nowrap;
 		justify-content: center;
