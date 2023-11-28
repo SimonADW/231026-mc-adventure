@@ -4,8 +4,6 @@
 	.hero__heading {
 		font-size: var(--font-size-large);
 	}
-
-
 }
 
 /* Tablet and Desktop */
@@ -87,10 +85,7 @@
 	.destinations, .rentals {
 		padding: var(--spacing-small) 20% var(--spacing-large);
 	}
-		
-
 }
-
 
 /*  Desktop */
 @media screen and (min-width: 840px) {
@@ -127,14 +122,17 @@
 
 	.section-bikes {
 		display: grid;
-		grid-template-columns: repeat(16, 6.25%);
+		grid-template-columns: repeat(16, 1fr);
 		grid-template-rows: 1fr 3fr 1fr;
 		gap: 0;
 	}
 
-	.section-bikes__slideshow {
+	.section-bikes-slideshow-container {
 		grid-column: 5 / span 8;
-		grid-row-start: 2;		
+		grid-row: 2;
+		
+	}
+	.section-bikes__slideshow {
 		height: 100%;
 	}	
 
@@ -161,5 +159,4 @@
 	.section-bikes p:last-of-type {
 		grid-row: 5;
 	}
-
 }

@@ -3,6 +3,7 @@
 
 
 ### What the project does  
+This is the main semester assigment.
 Design and code website for a fictional business offering guided motorcycle tours.
 
 ### Why the project is useful - Assigment:

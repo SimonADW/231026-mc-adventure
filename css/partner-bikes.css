@@ -22,12 +22,10 @@
 	display: flex;
 }
 
-
 .availability-drawer a{
 	color: #C12925;
 	text-decoration: underline;
 }
-
 
 main {
 	min-height: calc(100vh - (110px + 75px)); /* 100vh - (footer + header) */
@@ -123,7 +121,6 @@ main h1 {
 
 .partner-card {
 	max-width: 400px;	
-	/* min-width: 400px; */
 	border: 1px solid var(--color-primary);
 	padding: 0.5rem;
 	font-size: var(--font-size-xsmall);
