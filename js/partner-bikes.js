@@ -19,6 +19,7 @@ const toggleAccordionFilterList = (event)=> {
 	event.currentTarget.nextElementSibling.classList.toggle("partner__accordion-content--visible");
 };
 
+
 partnerAccordions.forEach((button)=> {
 	button.addEventListener("click", toggleAccordionFilterList);
 });
@@ -27,6 +28,12 @@ filterButtons.forEach(button => {
 	button.addEventListener("click", closeAccordions);	
 });
 
+document.addEventListener("click", (event) => {
+	if(!event.target.className.includes("partner__accordion-content__button") && !event.target.className.includes("partner__accordion-button")) {
+		accordionMakeContent.classList.remove("partner__accordion-content--visible");
+		accordionTypeContent.classList.remove("partner__accordion-content--visible");
+	};
+});
 
 
 // Render cards
