@@ -6,6 +6,7 @@
 	margin: 0 auto var(--spacing-large);
 	display: flex;
 	justify-content: center;
+	box-shadow: 0 0 7px grey;
 }
 
 .slideshow__slides {

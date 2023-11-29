@@ -34,8 +34,25 @@
 
 .menu-drawer__links a {
 	transition: 300ms;
+	opacity: 0;
+}
+
+.links-animation {
+	animation: fadeInLinks 800ms 200ms ease-out forwards;
 }
 
 .menu-drawer__links a:hover {
 	transform: scale(1.2);
+}
+
+@keyframes fadeInLinks {
+	from {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }

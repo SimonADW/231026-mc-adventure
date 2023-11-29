@@ -2,13 +2,24 @@
 const hamburgerButton = document.querySelector(".header__hamburger-button");
 const menuDrawer = document.querySelector(".menu-drawer")
 const closeDrawerButton = document.querySelector(".menu-drawer__close")
+let menuLinks = [];
 
 hamburgerButton.addEventListener("click", ()=> {
 	menuDrawer.classList.toggle("menu-drawer--visible");
+	menuLinks = document.querySelectorAll(".menu-drawer__links>a")
+	menuLinks.forEach((link, i) => {
+		setTimeout(()=> {
+			link.classList.add("links-animation")
+	}, i*150);
+	});
 });
+
 
 closeDrawerButton.addEventListener("click", ()=> {
 	menuDrawer.classList.toggle("menu-drawer--visible");
+	menuLinks.forEach((link) => {
+		link.classList.remove("links-animation");
+	});
 });
 
 
