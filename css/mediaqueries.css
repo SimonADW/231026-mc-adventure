@@ -89,18 +89,22 @@
 
 /* Midway to desktop */
 
-@media screen and (min-width: 841px) and (max-width: 1150px) {
+@media screen and (min-width: 840px) and (max-width: 1150px) {
 
 	.section-bikes__sub-container {
 		flex-direction: column;
 		gap: var(--spacing-large);
 	}
 
+	.section-bikes__slideshow {		
+		transform: translateY(0%);
+	}	
+
 	.section-bikes__card {
 		flex-basis: 45%;
 		border: 1px solid black;
 		border-radius: 5px;
-		padding: 10px;
+		padding: 30px;
 		box-shadow: 0 0 7px grey;
 	}
 
@@ -190,4 +194,48 @@
 	.section-bikes>p:last-of-type {
 		margin-top: var(--spacing-large);
 	}
+}
+
+
+/* "Desktop small" */
+
+@media screen and (min-width: 840px) and (max-width: 1150px) {
+
+	.section-bikes__sub-container {
+		flex-direction: column;
+		gap: var(--spacing-large);
+	}
+
+	.section-bikes__slideshow {		
+		transform: translateY(0%);
+	}	
+
+	.section-bikes__card {
+		flex-basis: 45%;
+		border: 1px solid black;
+		border-radius: 5px;
+		padding: 30px;
+		box-shadow: 0 0 7px grey;
+	}
+
+	.section-bikes__cards__left {
+		display: flex;
+		flex-direction: row;
+		width: 675px;
+		justify-content: space-between;
+		
+		
+	}
+	.section-bikes__cards__right {
+		display: flex;
+		flex-direction: row;
+		width: 675px;
+		justify-content: space-between;
+
+	}
+
+	.section-bikes__slideshow {
+		margin-bottom: calc(var(--spacing-large) - 63px);  /* Spacing large minus figcaption height */
+	}
+
 }
