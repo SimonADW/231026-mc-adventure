@@ -237,5 +237,4 @@
 	.section-bikes__slideshow {
 		margin-bottom: calc(var(--spacing-large) - 63px);  /* Spacing large minus figcaption height */
 	}
-
 }

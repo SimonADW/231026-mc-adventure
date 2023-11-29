@@ -7,6 +7,7 @@ let menuLinks = [];
 hamburgerButton.addEventListener("click", ()=> {
 	menuDrawer.classList.toggle("menu-drawer--visible");
 	menuLinks = document.querySelectorAll(".menu-drawer__links>a")
+	hamburgerButton.style.display = "none";
 	menuLinks.forEach((link, i) => {
 		setTimeout(()=> {
 			link.classList.add("links-animation")
@@ -17,6 +18,7 @@ hamburgerButton.addEventListener("click", ()=> {
 
 closeDrawerButton.addEventListener("click", ()=> {
 	menuDrawer.classList.toggle("menu-drawer--visible");
+	hamburgerButton.style.display = "block";
 	menuLinks.forEach((link) => {
 		link.classList.remove("links-animation");
 	});
