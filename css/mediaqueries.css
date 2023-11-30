@@ -190,10 +190,6 @@
 	.section-bikes__card p {
 		font-size: var(--font-size-xsmall);
 	}
-
-	.section-bikes>p:last-of-type {
-		margin-top: var(--spacing-large);
-	}
 }
 
 
