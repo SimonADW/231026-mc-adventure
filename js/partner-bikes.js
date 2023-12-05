@@ -263,12 +263,14 @@ const createAndRenderCard = (object)=> {
 
 	cardContainer.appendChild(newCard);
 };
+let renderedCards = document.querySelectorAll(".partner-card");  
 
 const renderArrayOfCards = (cardsArray)=> {
 	cardContainer.textContent = "";
 	cardsArray.forEach((card)=> {
 		createAndRenderCard(card);
 	})	
+	renderedCards = document.querySelectorAll(".partner-card");
 }
 
 
@@ -310,11 +312,8 @@ renderArrayOfCards(allCards);
 // Availability drawer
 const availabilityDrawer = document.querySelector(".availability-drawer");
 const availabilityDrawerClose = document.querySelector(".availability-drawer__close");
-let renderedCards = document.querySelectorAll(".partner-card");  
 
-// document.addEventListener("DOMSubtreeModified", ()=> {
-// 	renderedCards = document.querySelectorAll(".partner-card");   @TODO: drawer only pops pre filtering
-// });
+
 
 availabilityDrawerClose.addEventListener("click", ()=> {
 	availabilityDrawer.classList.remove("availability-drawer--visible");
@@ -323,7 +322,6 @@ availabilityDrawerClose.addEventListener("click", ()=> {
 
 renderedCards.forEach((card)=> {
 	card.addEventListener("click", ()=> {
-		console.log("hello");
 		availabilityDrawer.classList.add("availability-drawer--visible");
 	});
 });

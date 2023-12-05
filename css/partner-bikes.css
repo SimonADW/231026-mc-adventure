@@ -2,6 +2,12 @@
 	position: static;	
 }
 
+.header__logo {
+	width: 100px;
+}
+
+
+
 .availability-drawer {
 	height: 50%;
 	width: 90%;

@@ -12,6 +12,10 @@
 	position: static;	
 }
 
+.header__logo {
+	width: 100px;
+}
+
 .help-center__info div {
 	padding: var(--spacing-large) 10%;
 }
