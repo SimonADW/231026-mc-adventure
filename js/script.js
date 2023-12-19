@@ -101,4 +101,44 @@ submitButton.addEventListener("click", (event)=> {
 });
 
 
+// Hamburger change color on scroll
+
+const changeHamburgerColor = ()=> {
+	
+	const hamburgerButtonPath = document.querySelector(".header__hamburger-button path");
+
+	const pixelsScrolledFromTop = window.scrollY;
+
+	const sectionsToSwitchColor = {
+		sectionOneStart: 211,
+		sectionOneEnd: 875,		
+		sectionTwoStart: 1599,
+		sectionTwoEnd: 2393,
+		sectionThreeStart: 2452,
+		sectionThreeEnd: 2649,
+		sectionFourStart: 3382,
+		sectionFourEnd: 4300,
+		sectionFiveStart: 6020,
+		sectionFiveEnd: 6675,
+	}
+
+	if (pixelsScrolledFromTop > sectionsToSwitchColor.sectionOneStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionOneEnd
+		||
+		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionTwoStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionTwoEnd)
+		||
+		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionThreeStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionThreeEnd)
+		||
+		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionFourStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionFourEnd)
+		||
+		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionFiveStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionFiveEnd)
+		) {
+			hamburgerButtonPath.style.fill = "white";
+		} else {
+			hamburgerButtonPath.style.fill = "black";
+		}
+
+
+}
+
+window.addEventListener("scroll", changeHamburgerColor);
 

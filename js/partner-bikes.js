@@ -263,14 +263,14 @@ const createAndRenderCard = (object)=> {
 
 	cardContainer.appendChild(newCard);
 };
-let renderedCards = document.querySelectorAll(".partner-card");  
+let renderedCards = document.getElementsByClassName("partner-card");  
+renderedCards = document.getElementsByClassName("partner-card"); 
 
 const renderArrayOfCards = (cardsArray)=> {
 	cardContainer.textContent = "";
 	cardsArray.forEach((card)=> {
 		createAndRenderCard(card);
 	})	
-	renderedCards = document.querySelectorAll(".partner-card");
 }
 
 
@@ -319,10 +319,16 @@ availabilityDrawerClose.addEventListener("click", ()=> {
 	availabilityDrawer.classList.remove("availability-drawer--visible");
 });
 
+renderedCards = document.getElementsByClassName("partner-card"); 
 
-renderedCards.forEach((card)=> {
+// renderedCards.forEach((card)=> {
+// 	card.addEventListener("click", ()=> {
+// 		availabilityDrawer.classList.add("availability-drawer--visible");
+// 	});
+// });
+
+for(let card of renderedCards) {
 	card.addEventListener("click", ()=> {
 		availabilityDrawer.classList.add("availability-drawer--visible");
 	});
-});
-
+};
