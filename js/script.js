@@ -106,19 +106,22 @@ const changeHamburgerColor = ()=> {
 	let sectionsToSwitchColor = {};
 	const hamburgerButtonPath = document.querySelector(".header__hamburger-button path");
 	const pixelsScrolledFromTop = window.scrollY;
+	const standardSectionHeigth = window.innerHeight;
+	const sectionTwoHeight = innerHeight * 0.7;
+	const sectionBikes = document.querySelector(".section-bikes");
+	const sectionBikesHeight = sectionBikes.offsetHeight;
+	console.log(sectionBikesHeight);
 
-	if (window.innerWidth >= 840 && window.innerWidth <= 1150) {	
+	if (window.innerWidth >= 840) {	
 		sectionsToSwitchColor = {
 			sectionOneStart: 211,
-			sectionOneEnd: 875,		
-			sectionTwoStart: 1599,
-			sectionTwoEnd: 2450,
-			sectionThreeStart: 2492,
-			sectionThreeEnd: 2649,
-			sectionFourStart: 3428,
-			sectionFourEnd: 4362,
-			sectionFiveStart: 6082,
-			sectionFiveEnd: 6750,
+			sectionOneEnd: standardSectionHeigth - 30,		// -30 is half the hamburger vertically //
+			sectionTwoStart: sectionTwoHeight + (standardSectionHeigth),
+			sectionTwoEnd: sectionTwoHeight + (standardSectionHeigth * 2) - 30,
+			sectionThreeStart: sectionTwoHeight + (standardSectionHeigth * 3) - 30,
+			sectionThreeEnd: sectionTwoHeight + (standardSectionHeigth * 4),
+			sectionFourStart: sectionTwoHeight + sectionBikesHeight + (standardSectionHeigth * 4) - 30,
+			sectionFourEnd: sectionTwoHeight + sectionBikesHeight + (standardSectionHeigth * 5) - 30,
 		}; 
 	}; 
 
@@ -128,15 +131,12 @@ const changeHamburgerColor = ()=> {
 		||
 		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionThreeStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionThreeEnd)
 		||
-		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionFourStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionFourEnd)
-		||
-		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionFiveStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionFiveEnd)
+		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionFourStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionFourEnd)		
 	) {
 		hamburgerButtonPath.style.fill = "white";
 	} else {
 		hamburgerButtonPath.style.fill = "black";
-	};
-		
+	};		
 };
 
 window.addEventListener("scroll", changeHamburgerColor);
