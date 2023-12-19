@@ -110,7 +110,6 @@ const changeHamburgerColor = ()=> {
 	const sectionTwoHeight = innerHeight * 0.7;
 	const sectionBikes = document.querySelector(".section-bikes");
 	const sectionBikesHeight = sectionBikes.offsetHeight;
-	console.log(sectionBikesHeight);
 
 	if (window.innerWidth >= 840) {	
 		sectionsToSwitchColor = {
@@ -123,8 +122,20 @@ const changeHamburgerColor = ()=> {
 			sectionFourStart: sectionTwoHeight + sectionBikesHeight + (standardSectionHeigth * 4) - 30,
 			sectionFourEnd: sectionTwoHeight + sectionBikesHeight + (standardSectionHeigth * 5) - 30,
 		}; 
-	}; 
 
+	} else if (window.innerWidth < 840) {	
+		sectionsToSwitchColor = {	
+			sectionOneStart: 430,
+			sectionOneEnd: standardSectionHeigth - 30,	
+			sectionTwoStart: sectionTwoHeight + (standardSectionHeigth),
+			sectionTwoEnd: sectionTwoHeight + (standardSectionHeigth * 2) - 30,
+			sectionThreeStart: sectionTwoHeight + (standardSectionHeigth * 4) - 30,
+			sectionThreeEnd: sectionTwoHeight + (standardSectionHeigth * 5),
+			sectionFourStart: sectionTwoHeight + sectionBikesHeight + (standardSectionHeigth * 5) - 30,
+			sectionFourEnd: sectionTwoHeight + sectionBikesHeight + (standardSectionHeigth * 6) - 30,
+		}; 
+	}
+	
 	if (pixelsScrolledFromTop > sectionsToSwitchColor.sectionOneStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionOneEnd
 		||
 		(pixelsScrolledFromTop > sectionsToSwitchColor.sectionTwoStart && pixelsScrolledFromTop < sectionsToSwitchColor.sectionTwoEnd)
